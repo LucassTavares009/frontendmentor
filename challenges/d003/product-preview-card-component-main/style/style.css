@@ -131,9 +131,14 @@ body p {
 
 @media (max-width: 700px) {
     
+    body {
+        align-items: unset;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
+        margin-top: 100px;
         max-width: 345px;
         border-radius: 10px;
         background-color: white;
