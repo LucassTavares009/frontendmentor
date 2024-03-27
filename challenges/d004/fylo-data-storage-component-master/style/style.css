@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--n-color4) url(/images/bg-desktop.png) no-repeat bottom right;
+    background: var(--n-color4) url(/challenges/d004/fylo-data-storage-component-master/images/bg-desktop.png) no-repeat bottom right;
     background-size: 100% 50%;
     font-family: var(--font);
     color: var(--n-color1);
@@ -214,7 +214,7 @@ p {
 @media (max-width:768px) {
 
     body {
-        background: url(/images/bg-mobile.png) no-repeat center center;
+        background: url(/challenges/d004/fylo-data-storage-component-master/images/bg-mobile.png) no-repeat center center;
         background-size: 100% 100%;
     }
 
