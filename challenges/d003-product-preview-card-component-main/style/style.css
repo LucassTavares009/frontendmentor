@@ -117,6 +117,7 @@ body p {
 .buy-btn:hover {
     background-color: var(--color1-a);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .buy-btn img {
@@ -129,17 +130,20 @@ body p {
     color: white;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     
     body {
-        align-items: unset;
+        height: unset;
+        height: auto;
+        align-items: center;
     }
 
     .container {
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        max-height: 450px;
         max-width: 345px;
+        margin-top: 15px;
         border-radius: 10px;
         background-color: white;
     }
