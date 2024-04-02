@@ -40,6 +40,12 @@ body p {
     width: 100%;
     max-width: 600px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.027);
+}
+
+picture {
+    max-height: 450px;
 }
 
 .container picture img{
