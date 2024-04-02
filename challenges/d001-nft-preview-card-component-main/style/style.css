@@ -51,6 +51,7 @@ body {
     opacity: 1;
     background-color: var(--primary-cyan2);
     transition: 0.7s;
+    cursor: pointer;
 }
 
 .image div img {
