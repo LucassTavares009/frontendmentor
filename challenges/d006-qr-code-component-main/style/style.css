@@ -28,20 +28,20 @@ body {
 .container-main {
     background-color: white;
     max-width: 320px;
-    padding: 16px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 15px;
     box-shadow: 1px 1px 13px 2px rgba(0, 0, 0, 0.103);
 }
 
 .container-img {
     width: 100%;
-    border-radius: 13px;
+    border-radius: 10px;
 }
 
 .container-heading {
     color: var(--color-3);
     font-weight: 700;
-    margin: 16px 8px;
+    margin: 15px 9px;
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ body {
     color: var(--color-2);
     font-size: 0.938em;
     font-weight: 400;
-    margin: 0px 8px;
+    margin: 0px 10px;
     margin-bottom: 20px;
     text-align: center;
 }
