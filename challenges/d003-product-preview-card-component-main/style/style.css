@@ -133,7 +133,6 @@ body p {
 @media (max-width: 600px) {
     
     body {
-        height: auto;
         align-items: center;
     }
 
