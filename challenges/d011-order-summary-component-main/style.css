@@ -142,6 +142,8 @@ body {
 
     body {
         background-image: url(images/pattern-background-desktop.svg);
+        background-position: top center;
+        background-size: contain;
         max-height: 900px;
         align-items: center;
     }
