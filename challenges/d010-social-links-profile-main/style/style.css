@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Lexend+Deca&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /*colors*/
+    --Green: hsl(75, 94%, 57%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    /*fonts*/
+    --font: "Inter", sans-serif; /*400, 600, 700*/
+}
+
+body {
+    background-color: var(--Off-Black);
+    color: white;
+    font-family: var(--font);
+    font-size: 0.875em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Dark-Grey);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.main-img {
+    max-width: 96px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.main-name {
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.main-locate {
+    font-weight: 600;
+    color: var(--Green);
+    margin-bottom: 20px;
+}
+
+.main-txt {
+    margin-bottom: 10px;
+}
+
+.main-link {
+    width: 100%;
+    background-color: var(--Grey);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.main-link:hover {
+    background-color: var(--Green);
+    color: var(--Grey);
+    transition: 0.5s;
+}
+
+@media (min-width: 600px) {
+
+    .container-main {
+        min-width: 380px;
+        padding: 40px;
+        border-radius: 10px;
+        transition: 0.5s ease;
+    }
+}
+
+@media (max-width: 599px) {
+
+    .container-main {
+        min-width: initial;
+        padding: 25px;
+        border-radius: 10px;
+        transition: min-width 0.5s ease, padding 0.5s ease, border-radius 0.5s ease;
+    }
+}
+
+
