@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Lexend+Deca&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+:root {
+    /*colors*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Bright-blue-transparency: hsla(245, 75%, 52%, 0.425);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    /*font-family*/
+    --font: "Red Hat Display", sans-serif; /*Weights: 500, 700, 900*/
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Pale-blue) url(images/pattern-background-mobile.svg) center center no-repeat;
+    background-size: contain;
+    font-family: var(--font);
+    font-size: 1em;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 328px;   
+    text-align: center;
+    border-radius: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.main-img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main-heading {
+    font-size: 1.4em;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-top: 5px;
+}
+
+.main-txt {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.875em;
+    background-color: var(--Very-pale-blue);
+    padding: 15px 0px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.box-img {
+    max-width: 48px;
+}
+
+.box-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-signature {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin-bottom: 3px;
+}
+
+.box-price {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.box-link {
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+.box-link:hover {
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.main-btn-buy {
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 700;
+    font-size: 0.8750em;
+    padding: 17px;
+    margin-top: 24px;
+    border-radius: 10px;
+    box-shadow: 0px  9px 14px 0px var(--Bright-blue-transparency);
+}
+
+.main-btn-buy:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.main-btn-cancel {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+    margin: 25px 0px 8px 0px;
+}
+
+.main-btn-cancel:hover {
+    color: var(--Dark-blue);
+    transition: 0.5s;
+}
+
+@media (min-width: 600px) {
+
+    body {
+        background-image: url(images/pattern-background-desktop.svg)
+    }
+
+    .container-main {
+        min-width: 450px;
+    }
+
+    .main {
+        padding: 50px;
+    }
+
+    .main-heading {
+        font-size: 1.8em;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .main-txt {
+        margin: 0px;
+    }
+
+    .main-box {
+        padding: 25px 0px;
+        margin: 20px 0px 10px 0px;
+    }
+
+    .box-flex {
+        font-size: 1.190em;
+        margin-left: -40px;
+    }
+
+    .main-btn-cancel {
+        margin-bottom: 5px;
+    }
+
+
+}
