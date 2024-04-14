@@ -30,7 +30,6 @@ body {
     background-color: var(--Very-dark-blue-main-background);
     font: normal 400 0.938em var(--font-1);
     color: var(--White-main-heading-stats);
-    transition: all 0.5s ease;
 }
 
 .container-main {
@@ -39,6 +38,7 @@ body {
     background-color: var(--Dark-desaturated-blue-card-background);
     max-width: 327px;
     border-radius: 10px;
+    transition: all 0.5s ease;
 }
 
 .main-img-box {
